@@ -2,6 +2,8 @@ This is a small program written in Processing as part of an assignment for the c
 
 The program will apply smoothing to pitch, roll and yaw and calculate RMS on acceleration from WiiMote sensor values sent over OSC from OSCulator on OSX. The new values will then be forwarded over OSC.
 
+You can find the latest version here: https://github.com/hypp/OSCulatorSmoother
+
 Prerequisites:
 - OSX only
 - You need at least one WiiMote
