@@ -4,11 +4,14 @@ The program will apply smoothing to pitch, roll and yaw and calculate RMS on acc
 
 You can find the latest version here: https://github.com/hypp/OSCulatorSmoother
 
+The program can for instance be used to make it easier to classify how the WiiMote is positioned: flat, left side down, upside down, right side down, camera pointing down and camera pointing up. 
+
 Prerequisites:
 - OSX only
 - You need at least one WiiMote
 - You need OSCulator http://www.osculator.net
 - You need Processing http://processing.org
+- You need the Processing extension oscP5 http://www.sojamo.de/oscP5
 - You should be familiar with OSC https://en.wikipedia.org/wiki/Open_Sound_Control
 
 Setup:
@@ -27,8 +30,6 @@ final int oscOutputPort = 6448;
 
 If you are using this with Wekinator http://www.wekinator.org/:
 - Configure Wekinator to listen to 6448, 4 inputs
-- Note that OSCulatorSmoother by default listens for OSC messages on port 12000. Remember to configure Wekinator to sent its output to another port!
-
-
+- Note that OSCulatorSmoother by default listens for OSC messages on port 12000. Remember to configure Wekinator to send its output to another port!
 
 
