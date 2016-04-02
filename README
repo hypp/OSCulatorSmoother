@@ -1,0 +1,32 @@
+This is a small program written in Processing as part of an assignment for the course MACHINE LEARNING FOR MUSICIANS AND ARTISTS at www.kadenze.org
+
+The program will apply smoothing to pitch, roll and yaw and calculate RMS on acceleration from WiiMote sensor values sent over OSC from OSCulator on OSX. The new values will then be forwarded over OSC.
+
+Prerequisites:
+- OSX only
+- You need at least one WiiMote
+- You need OSCulator http://www.osculator.net
+- You need Processing http://processing.org
+- You should be familiar with OSC https://en.wikipedia.org/wiki/Open_Sound_Control
+
+Setup:
+- Install OSCulator and pair at least one WiiMote
+- Configure OSCulator to send pitch, roll, yaw and acceleration over OSC
+- Install Processing
+- git clone this repo
+- Open OSCulatorSmoother.pde in Processing
+- Edit the following variables at the top of the program to match your environment:
+// CHANGE THIS TO MATCH YOUR SETUP
+final String oscInputPath = "/wii/3/accel/pry";
+final int oscInputPort = 12000;
+final String oscOutputPath = "/wek/inputs";
+final int oscOutputPort = 6448;
+- Run the program
+
+If you are using this with Wekinator http://www.wekinator.org/:
+- Configure Wekinator to listen to 6448, 4 inputs
+- Note that OSCulatorSmoother by default listens for OSC messages on port 12000. Remember to configure Wekinator to sent its output to another port!
+
+
+
+
